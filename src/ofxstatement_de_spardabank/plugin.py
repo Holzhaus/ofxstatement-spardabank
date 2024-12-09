@@ -5,14 +5,14 @@ from ofxstatement.parser import StatementParser
 from ofxstatement.statement import Statement, StatementLine
 
 
-class SamplePlugin(Plugin):
-    """Sample plugin (for developers only)"""
+class SpardaBankDePlugin(Plugin):
+    """Plugin for parsing CSV files from the German Sparda-Bank eG."""
 
-    def get_parser(self, filename: str) -> "SampleParser":
-        return SampleParser(filename)
+    def get_parser(self, filename: str) -> "SpardaBankDeParser":
+        return SpardaBankDeParser(filename)
 
 
-class SampleParser(StatementParser[str]):
+class SpardaBankDeParser(StatementParser[str]):
     def __init__(self, filename: str) -> None:
         super().__init__()
         self.filename = filename

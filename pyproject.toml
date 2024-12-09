@@ -3,12 +3,12 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ofxstatement-sample"
+name = "ofxstatement-de-spardabank"
 version = "0.0.1"
 authors = [
-  { name="Andrey Lebedev", email="andrey@lebedev.lt" },
+  { name="Jan Holthuis", email="jan.holthuis@ruhr-uni-bochum.de" },
 ]
-description = "Sample plugin for ofxstatement"
+description = "Sparda-Bank plugin for ofxstatement"
 readme = "README.rst"
 requires-python = ">=3.9"
 classifiers = [
@@ -27,7 +27,7 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/kedder/ofxstatement-sample/"
+Homepage = "https://github.com/Holzhaus/ofxstatement-de-spardabank/"
 
 [project.entry-points."ofxstatement"]
-sample = "ofxstatement_sample.plugin:SamplePlugin"
+de-spardabank = "ofxstatement_de_spardabank.plugin:SpardaBankDePlugin"
