@@ -9,7 +9,7 @@ authors = [
   { name="Jan Holthuis", email="jan.holthuis@ruhr-uni-bochum.de" },
 ]
 description = "Sparda-Bank plugin for ofxstatement"
-readme = "README.rst"
+readme = "README.md"
 requires-python = ">=3.9"
 classifiers = [
     "Development Status :: 3 - Alpha",
